@@ -1,0 +1,9 @@
+package com.zensar.training.bean;
+
+public class Developer {
+	int id;
+	String name;
+	String city;
+	String[]skills=new String[5];
+
+}

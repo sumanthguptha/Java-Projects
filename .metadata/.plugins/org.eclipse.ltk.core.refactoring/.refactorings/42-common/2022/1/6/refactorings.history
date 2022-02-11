@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;44-CollectionsUtil/src&apos;&#x0D;&#x0A;- Original project: &apos;42-common&apos;&#x0D;&#x0A;- Destination element: &apos;44-CollectionsUtil/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     42-common/src/com.zensar.training.bean&#x0D;&#x0A;     42-common/src/com.zensar.training.bean.comparator&#x0D;&#x0A;     42-common/src/com.zensar.training.ui" description="Copy packages" destination="=44-CollectionsUtil/src" element1="/src&lt;com.zensar.training.bean" element2="/src&lt;com.zensar.training.bean.comparator" element3="/src&lt;com.zensar.training.ui" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1643612276861" version="1.0"/>
+</session>

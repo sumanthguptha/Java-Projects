@@ -1,0 +1,74 @@
+package com.zensar.training;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.Metadata;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.service.ServiceRegistry;
+
+import com.zensar.training.bean.Contact;
+
+public class Main 
+	{
+	static void insert() 
+	{
+		Contact contact=new Contact(1,"Sumanth", 25, "7396305328");
+		
+		ServiceRegistry registry;
+		SessionFactory sessionFactory;
+		registry = new StandardServiceRegistryBuilder().configure().build();
+		MetadataSources metaSources = new MetadataSources(registry);
+		Metadata metaData = metaSources.getMetadataBuilder().build();
+		sessionFactory = metaData.getSessionFactoryBuilder().build();
+		
+		Session session=sessionFactory.openSession();
+		
+		Transaction tx=session.beginTransaction();
+		
+		session.save(contact);
+		
+		tx.commit();
+
+		System.out.println("Contact saved to DB");
+
+		
+		session.close();
+		sessionFactory.close();
+		}
+	
+		static void read() {
+			ServiceRegistry registry;
+			SessionFactory sessionFactory;
+			registry = new StandardServiceRegistryBuilder().configure().build();
+			MetadataSources metaSources = new MetadataSources(registry);
+			Metadata metaData = metaSources.getMetadataBuilder().build();
+			sessionFactory = metaData.getSessionFactoryBuilder().build();
+		
+			Session session=sessionFactory.openSession();
+			
+			Contact contact=session.load(Contact.class, 1);
+			System.out.println(contact);
+			
+			session.close();
+			sessionFactory.close();
+			
+		}
+		
+		static void readAll() {
+			
+		}
+		
+		
+		
+		
+		
+	public static void main(String[] args) {
+		
+		read();
+		
+		
+	}
+
+}

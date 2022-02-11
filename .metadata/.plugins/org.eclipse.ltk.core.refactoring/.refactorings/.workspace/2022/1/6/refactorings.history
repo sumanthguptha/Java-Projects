@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;DateTime  API&apos; to &apos;43-DateTime  API&apos;&#x0D;&#x0A;- Original element: &apos;DateTime  API&apos;&#x0D;&#x0A;- Renamed element: &apos;DateTime  API&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;DateTime  API&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=DateTime  API" name="43-DateTime  API" references="true" stamp="1643612155936" version="1.0"/>
+</session>

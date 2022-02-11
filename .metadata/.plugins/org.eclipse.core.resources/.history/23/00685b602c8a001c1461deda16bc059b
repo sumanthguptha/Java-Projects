@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+  
+ <hibernate-mapping package="com.genpact.business"> 
+	<class name="com.zensar.training.bean.Loan" table="LOAN10">
+		<id name="loanId" column="loanId">
+			<generator class="native"></generator>
+		</id>
+	<property name="customerName" column="loanCustomer"></property>
+	<property name="loanAmt" column="loanAmt"></property>
+	<property name="loanDate" column="loanDate"></property>
+	<discriminator column="typeOfLoan" type="string"></discriminator>
+	
+	<subclass name="com.zensar.training.bean.HomeLoan">
+		<property name="homeAddress" column="propertyAddress"></property>
+		<property name="ownedBy" column="Owner"></property>
+	</subclass>
+	
+	<subclass name="com.zensar.training.bean.CarLoan">
+		<property name="carDetails" column="carDetails"></property>
+		<property name="registeredDate" column="RegState"></property>
+	</subclass>
+	
+	</class>
+            
+ </hibernate-mapping>  

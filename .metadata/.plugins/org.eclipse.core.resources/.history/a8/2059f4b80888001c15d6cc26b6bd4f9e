@@ -1,0 +1,15 @@
+package com.zensar.training.bean;
+
+import com.zensar.training.annotations.TestIntegers;
+
+public class ATest {
+	@TestIntegers(ints= {3,4,5,6,7})
+	void test1() {
+		
+	}
+	
+	void test2() {
+		
+	}
+
+}

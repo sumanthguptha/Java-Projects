@@ -1,0 +1,13 @@
+package com.zensar.training.ui;
+
+import com.zensar.training.bean.pack2.Hello;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		Hello hello;
+		
+		hello=()->System.out.println("How are you");
+	}
+
+}

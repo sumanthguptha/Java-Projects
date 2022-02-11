@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.zensar.training.bean.Product" table="product">
+		<id name="id" column="Pr_id">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="name" column="Pr_NAME"></property>
+		<primitive-array name="discounts"
+			table="product_discounts">
+			<key column="id"></key>
+			<index column="idx"></index>
+			<element column="discount" type="int"></element>
+		</primitive-array>
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+package com.zensar.training.bean;
+
+import java.time.LocalDate;
+
+public class Employee {
+	private int employeeId;
+	private String name;
+	private LocalDate dateofJoining;
+	private double basicSalary;
+	private Gender gender;
+
+}

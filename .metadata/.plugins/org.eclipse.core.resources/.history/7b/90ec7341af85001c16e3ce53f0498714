@@ -1,0 +1,18 @@
+package com.zensar.training.ui;
+
+public class BankAccount {
+	private int balance;
+
+	public BankAccount(int balance) {
+		super();
+		this.balance = balance;
+	}
+	
+	public void withdraw(int amt) {
+		this.balance=this.balance-amt;
+	}
+	
+	public void deposit(int amt) {
+		this.balance=this.balance+amt;
+	}
+}

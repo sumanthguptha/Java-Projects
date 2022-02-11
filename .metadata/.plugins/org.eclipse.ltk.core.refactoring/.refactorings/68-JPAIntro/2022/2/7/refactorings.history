@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;pom.xml&apos; to &apos;69-BasicORM&apos;&#x0D;&#x0A;- Original project: &apos;68-JPAIntro&apos;&#x0D;&#x0A;- Destination element: &apos;69-BasicORM&apos;&#x0D;&#x0A;- Original element: &apos;pom.xml&apos;" description="Copy file" destination="=69-BasicORM" element1="pom.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1644560119992" units="0" version="1.0"/>
+</session>

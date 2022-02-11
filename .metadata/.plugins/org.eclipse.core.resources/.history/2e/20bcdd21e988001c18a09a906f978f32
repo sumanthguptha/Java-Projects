@@ -1,0 +1,30 @@
+package com.zensar.training;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.Metadata;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.service.ServiceRegistry;
+
+import com.zensar.training.bean.Contact;
+
+public class Main 
+	{
+	static void insert() 
+	{
+		Contact contact=new Contact(26,"John", 25, "7396305328");
+		
+		ServiceRegistry registry;
+		SessionFactory sessionFactory;
+		registry = new StandardServiceRegistryBuilder().configure().build();
+		MetadataSources metaSources = new MetadataSources(registry);
+		Metadata metaData = metaSources.getMetadataBuilder().build();
+		sessionFactory = metaData.getSessionFactoryBuilder().build();
+		
+	}
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

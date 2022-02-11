@@ -1,0 +1,19 @@
+package com.zensar.training.ui;
+
+public class Main8 {
+
+	public static void main(String[] args) {
+		
+		BankAccount account=new BankAccount(6);
+		DepositingTask depositingTask=new DepositingTask(account);
+		WithdrawTask withdrawTask=new WithdrawTask(account);
+		
+		Thread t1= new Thread(depositingTask);
+		Thread t2= new Thread(withdrawTask);
+
+		t1.start();
+		t1.stop();
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.zensar.training.bean;
+
+import java.util.List;
+
+public class LengthCoutingRunnable implements Runnable {
+
+	List<String> list;
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.zensar.training.annotations;
+
+public @interface Table {
+	String tableName();
+	String dbName();
+}

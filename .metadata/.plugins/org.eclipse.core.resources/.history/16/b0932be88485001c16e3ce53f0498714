@@ -1,0 +1,13 @@
+package com.zensar.training.ui;
+
+public class CountryPrintingTask implements Runnable{
+
+	@Override
+	public void run() {
+		String countryNames[]= {"India","german","france","usa"};
+		for(String country:countryNames) {
+			System.out.println(country);
+		}
+	}
+
+}

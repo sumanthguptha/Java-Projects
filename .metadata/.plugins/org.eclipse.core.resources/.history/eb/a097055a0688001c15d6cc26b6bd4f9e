@@ -1,0 +1,6 @@
+package com.zensar.training.annotations;
+
+@Retention(RetentionP)
+public @interface Column {
+
+}

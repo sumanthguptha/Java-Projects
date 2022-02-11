@@ -1,0 +1,16 @@
+package com.zensar.training;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class Main1 {
+	
+	static void insert() {
+		EntityManagerFactory emf=Persistence.createEntityManagerFactory("JPAIntro");
+	}
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.zensar.training.bean.pack2;
+
+public class Welcome {
+
+}

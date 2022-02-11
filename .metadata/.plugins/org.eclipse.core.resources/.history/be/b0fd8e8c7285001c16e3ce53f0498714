@@ -1,0 +1,27 @@
+package com.zensar.training.ui;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+
+import com.zensar.training.bean.Employee;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		Employee employee=new Employee();
+		
+		OutputStream os= new FileOutputStream("employee.dat");
+		ObjectOutputStream oos;
+		oos=new ObjectOutputStream(os);
+		
+		oos.writeObject(employee);
+		
+		oos.flush();
+		oos.close();
+		os.close();
+	}
+
+	}
+
+}

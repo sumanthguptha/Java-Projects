@@ -1,0 +1,15 @@
+package com.zensar.training;
+
+import com.zensar.training.bean.Contact;
+
+public class Main 
+{
+	static void insert() 
+	{
+		Contact contact=new Contact(23, "Munna", "7396305328");
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.zensar.training.ui;
+
+import com.zensar.training.bean.pack2.Hello;
+import com.zensar.training.bean.pack2.Welcome;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		Hello hello;
+		
+		Welcome welcome=new Welcome();
+		hello=welcome::sayWelcome;
+		
+		//hello=()->System.out.println("How are you");
+		
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.jboss.org/dtd/hibernate/hibernate-configuration-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.zensar.training.bean.Employee" table="EMPLOYEE">
+	<id name="employeeId">
+		<generator class="native"></generator>
+	</id>
+	<property name="name" column="name"></property>
+	<property name="dateofJoining" column="DOJ"></property>
+	<property name="basicSalary" column="basic"></property>
+	<property name="gender" column="gender"></property>
+	</class>
+
+</hibernate-mapping>
+    

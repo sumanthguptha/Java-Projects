@@ -1,0 +1,23 @@
+package com.zensar.training;
+
+import com.zensar.training.bean.Developer;
+
+public class Main2 {
+	
+	static void insertTest() {
+		Developer developer=new Developer();
+		developer.setName("mani");
+		developer.setCity("haryana");
+		developer.addSkill("angular");
+		developer.addSkill("HTML");
+		developer.addSkill("CSS");
+		developer.addSkill("React Js");
+		developer.addSkill("node Js");
+
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}
